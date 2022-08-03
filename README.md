@@ -4,11 +4,17 @@ Cards for gridpack generation in MadGraph
 ## Naming 
 
 '01j' indicates an extra jet
+
 '01jq' indicates an extra jet, where the jet cannot be a b or b~ although 5f scheme is used
+
 '1l_wm' inidcates that all w- are decaying leptonically and all w+ hadronically
+
 '1l_mp' inidcates that all w+ are decaying leptonically and all w- hadronically
+
 'dilep' indicates that both W- and w+ decay leptonically
+
 '1l' in the single top t-channel there is only one w per event and this decays leptonically
+
 '4f' implemented in the 4f scheme (all processes without this are 5f scheme), this also means that the 4f restriction card is loaded and maxflavor=4 in run card
 
  
