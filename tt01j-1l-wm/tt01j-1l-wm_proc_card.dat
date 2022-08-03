@@ -1,0 +1,13 @@
+import model SMEFTsim_topU3l_MwScheme_UFO-massless_HWW
+define p = g u c d s b u~ c~ d~ s~ b~
+define j = p
+define l+ = e+ mu+ ta+
+define l- = e- mu- ta-
+define had = u c d s u~ c~ d~ s~
+
+generate    p p > t t~,   t > w+ b, t~ > w- b~  @0  NPprop=0 SMHLOOP=0 NP=1 
+add process p p > t t~ j, t > w+ b, t~ > w- b~  @1  NPprop=0 SMHLOOP=0 NP=1 
+
+output tt01j-1l-wm -nojpeg
+
+
