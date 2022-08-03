@@ -1,8 +1,6 @@
 # TopEFT
 Cards for gridpack generation in MadGraph
 
-=======
-
 ## Naming 
 
 '01j' indicates an extra jet
