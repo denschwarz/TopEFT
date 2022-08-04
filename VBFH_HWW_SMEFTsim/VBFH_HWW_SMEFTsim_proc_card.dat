@@ -1,0 +1,12 @@
+import model SMEFTsim_topU3l_MwScheme_UFO-massless_HWW
+define p = u c d s b u~ c~ d~ s~ b~
+define j = p
+define l+ = e+ mu+ ta+
+define l- = e- mu- ta-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+define w = w+ w-
+define lp = l+ l-
+define vp = vl vl~
+generate p p > j j h $$ w+ w- z a / g j, h > lp vp lp vp / z a j @0 SMHLOOP=0 NProp=0 NP=1 QCD=0
+output VBFH_HWW_SMEFTsim -nojpeg

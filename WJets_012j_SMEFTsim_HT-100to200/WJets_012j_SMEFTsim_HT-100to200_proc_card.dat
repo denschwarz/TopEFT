@@ -1,0 +1,13 @@
+import model SMEFTsim_topU3l_MwScheme_UFO-massless_HWW
+define p = g u c d s b u~ c~ d~ s~ b~
+define j = p
+
+generate p p > w+ $$ t t~ h  SMHLOOP=0 NProp=0 NP=1
+add process p p > w+ j $$ t t~ h  SMHLOOP=0 NProp=0 NP=1
+add process p p > w+ j j $$ t t~ h  SMHLOOP=0 NProp=0 NP=1
+
+add process p p > w- $$ t t~ h  SMHLOOP=0 NProp=0 NP=1
+add process p p > w- j $$ t t~ h  SMHLOOP=0 NProp=0 NP=1
+add process p p > w- j j $$ t t~ h  SMHLOOP=0 NProp=0 NP=1
+
+output WJets_012j_SMEFTsim_HT-100to200 -nojpeg
