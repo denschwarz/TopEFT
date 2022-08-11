@@ -4,11 +4,12 @@ define j = p
 define l+ = e+ mu+ ta+
 define l- = e- mu- ta-
 define had = u c d s u~ c~ d~ s~
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
 
-generate    p p > t  b~ j   $$ w+ w-, t  > w+ b   @0 NPprop=0 SMHLOOP=0 NP=1
-add process p p > t~ b  j   $$ w+ w-, t~ > w- b~  @1 NPprop=0 SMHLOOP=0 NP=1
-add process p p > t  b~ j j $$ w+ w-, t  > w+ b   @2 NPprop=0 SMHLOOP=0 NP=1
-add process p p > t~ b  j j $$ w+ w-, t~ > w- b~  @3 NPprop=0 SMHLOOP=0 NP=1
-
+generate    p p > t  b~ j   $$ w+ w-, t  > l+ vl  b   @0 NPprop=0 SMHLOOP=0 NP=1
+add process p p > t~ b  j   $$ w+ w-, t~ > l- vl~ b~  @1 NPprop=0 SMHLOOP=0 NP=1
+add process p p > t  b~ j j $$ w+ w-, t  > l+ vl  b   @2 NPprop=0 SMHLOOP=0 NP=1
+add process p p > t~ b  j j $$ w+ w-, t~ > l- vl~ b~  @3 NPprop=0 SMHLOOP=0 NP=1
 
 output t01j-tch-1l-4f -nojpeg

@@ -1,0 +1,19 @@
+import model SMEFTsim_topU3l_MwScheme_UFO-massless_HWW
+define p = g u c d s b u~ c~ d~ s~ b~
+define jq = g u c d s u~ c~ d~ s~
+define l+ = e+ mu+ ta+
+define l- = e- mu- ta-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+define had = u c d s u~ c~ d~ s~
+
+generate    p p > t  w-,          t  > l+ vl  b,  w- > had had    @0 NPprop=0 SMHLOOP=0 NP=1
+add process p p > t  w-,          t  > had had  b,  w- > l- vl~   @1 NPprop=0 SMHLOOP=0 NP=1
+add process p p > t~ w+,          t~ > l- vl~ b~, w+ > had had    @2 NPprop=0 SMHLOOP=0 NP=1
+add process p p > t~ w+,          t~ > had had b~, w+ > l+ vl     @3 NPprop=0 SMHLOOP=0 NP=1
+add process p p > t  w- jq $$ t~, t  > l+ vl  b,  w- > had had    @4 NPprop=0 SMHLOOP=0 NP=1
+add process p p > t  w- jq $$ t~, t  > had had  b,  w- > l- vl~   @5 NPprop=0 SMHLOOP=0 NP=1
+add process p p > t~ w+ jq $$ t,  t~ > l- vl~ b~, w+ > had had    @6 NPprop=0 SMHLOOP=0 NP=1
+add process p p > t~ w+ jq $$ t,  t~ > had had b~, w+ > l+ vl     @7 NPprop=0 SMHLOOP=0 NP=1
+
+output tW01jq-1l -nojpeg
