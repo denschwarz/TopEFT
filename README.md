@@ -30,5 +30,6 @@ In those three special version, no madspin card is provided.
 
 ## Gridpack location 
 
-With W-decay in proc_card: /eos/user/c/chatterj/HiggsEFT/BITv3/Gridpacks/w_W_decay
-Without W-decay in proc_card: /eos/user/c/chatterj/HiggsEFT/BITv3/Gridpacks/
+With W-decay in proc_card: '/eos/user/c/chatterj/HiggsEFT/BITv3/Gridpacks/w_W_decay/'
+
+Without W-decay in proc_card: '/eos/user/c/chatterj/HiggsEFT/BITv3/Gridpacks/'
