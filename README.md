@@ -33,3 +33,5 @@ In those three special version, no madspin card is provided.
 With W-decay in proc_card: /eos/user/c/chatterj/HiggsEFT/BITv3/Gridpacks/w_W_decay/  (on lxplus)
  
 Without W-decay in proc_card: /eos/user/c/chatterj/HiggsEFT/BITv3/Gridpacks/ (on lxplus)
+
+Link to the directory in CERNbox: https://cernbox.cern.ch/index.php/s/3XrnwYISXwrwSYu

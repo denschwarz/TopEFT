@@ -5,8 +5,8 @@ define l+ = e+ mu+ ta+
 define l- = e- mu- ta-
 define vl = ve vm vt
 define vl~ = ve~ vm~ vt~
-generate p p > w+ h, w+ > l+ vl @0  SMHLOOP=0 NProp=0 NP=1
-add process p p > w+ h j, w+ > l+ vl @1  SMHLOOP=0 NProp=0 NP=1
-add process p p > w- h, w- > l- vl~ @2  SMHLOOP=0 NProp=0 NP=1
-add process p p > w- h j, w- > l- vl~ @3 SMHLOOP=0 NProp=0 NP=1
+generate p p > w+ h, w+ > l+ vl, h > b b~ @0  SMHLOOP=0 NProp=0 NP=1
+add process p p > w+ h j, w+ > l+ vl, h > b b~ @1  SMHLOOP=0 NProp=0 NP=1
+add process p p > w- h, w- > l- vl~, h > b b~ @2  SMHLOOP=0 NProp=0 NP=1
+add process p p > w- h j, w- > l- vl~, h > b b~ @3 SMHLOOP=0 NProp=0 NP=1
 output WH1L_01j_SMEFTsim -nojpeg
