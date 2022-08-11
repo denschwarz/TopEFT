@@ -57,7 +57,7 @@ def make_reweight_card( filename, reweights, referencepoint, order_dict ):
         out_file.write("# Polynomial order: "+str(order_dict['order'])+'\n')
         if len(referencepoint) != 0: out_file.write("# Reference Point: "+" ".join(referencepoint)+'\n')
         out_file.write("change rwgt_dir rwgt\n\n")
-        out_file.write( "launch --rwgt_name=dummy # Name of first argument seems to be rwgt_1. Add dummy to fix it.\n\n" )
+        #out_file.write( "launch --rwgt_name=dummy # Name of first argument seems to be rwgt_1. Add dummy to fix it.\n\n" )
         for reweight in reweights:
             name = getWeightName( reweight )
             out_file.write( "launch --rwgt_name=%s\n"%name )
