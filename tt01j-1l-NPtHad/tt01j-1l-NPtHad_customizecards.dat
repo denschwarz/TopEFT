@@ -1,0 +1,11 @@
+set param_card LambdaSMEFT 1.000000e+03
+
+set param_card smeft 17 0.e+00
+set param_card smeft 19 0.e+00
+set param_card smeft 29 0.e+00
+set param_card smeft 31 0.e+00
+set param_card smeft 35 0.e+00
+
+set param_card smeftcpv 10 0.e+00
+set param_card smeftcpv 12 0.e+00
+set param_card smeftcpv 24 0.e+00
