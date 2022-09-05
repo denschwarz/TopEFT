@@ -35,3 +35,9 @@ With W-decay in proc_card: /eos/user/c/chatterj/HiggsEFT/BITv3/Gridpacks/w_W_dec
 Without W-decay in proc_card: /eos/user/c/chatterj/HiggsEFT/BITv3/Gridpacks/ (on lxplus)
 
 Link to the directory in CERNbox: https://cernbox.cern.ch/index.php/s/3XrnwYISXwrwSYu
+
+## For Gridpack production in CMSSW
+
+In gridpack_generation.sh script, change 'wget --no-check-certificate https://cms-project-generators.web.cern.ch/cms-project-generators/$model'
+to 'wget --no-check-certificate https://chatterj.web.cern.ch/chatterj/models/$model'
+
